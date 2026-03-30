@@ -17,5 +17,6 @@ namespace Tyuiu.MautalievSI.Sprint4.Task2.V19.Test
 
             Assert.AreEqual(52, res);
         }
+ 
     }
 }

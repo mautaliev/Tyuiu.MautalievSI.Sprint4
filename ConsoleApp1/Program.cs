@@ -1,14 +1,21 @@
-﻿int[] a = { 11, 5, 20, 3, 14 };
-int[] b = { 8, 13, 2, 7, 9 };
-
-int count = 0;
-
-for (int i = 0; i < a.Length; i++)
+﻿int[,] array = new int[,]
 {
-    if (a[i] > b[i])
+    { -10, 9, -10 },
+    { -2, 4, 8 },
+    { 9, -6, 4 }
+};
+
+int s = 0;
+
+for (int i = 0; i < array.GetLength(0); i++)
+{
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-        count++;
+        if (array[i, j] % 2 == 0)
+        {
+            s += array[i, j];
+        }
     }
 }
 
-Console.WriteLine(count);
+Console.WriteLine(s);
