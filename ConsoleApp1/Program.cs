@@ -1,11 +1,5 @@
-﻿int[,] array = new int[,]
-{
-    { -10, 9, -10 },
-    { -2, 4, 8 },
-    { 9, -6, 4 }
-};
-
-int s = 0;
+﻿int[,] array = new int[,] { { 2, 5, 8, 7 }, { 6, 7, 2, 5 }, { 6, 4, 8, 2 }, { 2, 7, 6, 3 } };
+int count = 0;
 
 for (int i = 0; i < array.GetLength(0); i++)
 {
@@ -13,9 +7,9 @@ for (int i = 0; i < array.GetLength(0); i++)
     {
         if (array[i, j] % 2 == 0)
         {
-            s += array[i, j];
+            count++;
         }
     }
 }
 
-Console.WriteLine(s);
+Console.WriteLine(count);
