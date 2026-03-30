@@ -1,4 +1,4 @@
-﻿int[,] array = new int[,] { { 2, 5, 8, 7 }, { 6, 7, 2, 5 }, { 6, 4, 8, 2 }, { 2, 7, 6, 3 } };
+﻿int[,] array = new int[,] { { 3, 4, 9 }, { 2, 6, 7 }, { 7, 1, 5 } };
 int count = 0;
 
 for (int i = 0; i < array.GetLength(0); i++)
